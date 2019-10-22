@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Carro } from './carro';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import { Carro } from './carro';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'aula';
+  public name = 'Eduardo';
 }
