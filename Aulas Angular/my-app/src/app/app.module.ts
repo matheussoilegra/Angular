@@ -11,6 +11,11 @@ import { EmployeeDetailComponent } from './components/employees-details/employee
 import { NgForComponent } from './components/ng-for/ng-for.component';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { PipesComponent } from './components/pipes/pipes.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DepartmentComponent } from './components/department/department.component';
+import { HomeComponent } from './components/home/home.component';
+import { EmployeeComponent } from './components/employee/employee.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +26,13 @@ import { PipesComponent } from './components/pipes/pipes.component';
     NgModelComponent,
     NgForComponent,
     NgSwitchComponent,
-    PipesComponent
+    PipesComponent,
+    DepartmentComponent,
+    HomeComponent,
+    EmployeeComponent,
+    PagenotfoundComponent
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
