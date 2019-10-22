@@ -7,7 +7,6 @@ import { EmployeeService } from 'src/app/services/employee.service';
   styleUrls: ['./employee-detail.component.scss']
 })
 export class EmployeeDetailComponent implements OnInit {
-  
   public employees = [];
 
   constructor(private _employeeService: EmployeeService) {}

@@ -6,12 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ng-model.component.scss']
 })
 export class NgModelComponent implements OnInit {
-  
   public name = 'Eduardo';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
