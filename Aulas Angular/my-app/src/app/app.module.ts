@@ -10,6 +10,7 @@ import { EmployeeListComponent } from './components/employees-list/employee-list
 import { EmployeeDetailComponent } from './components/employees-details/employee-detail.component';
 import { NgForComponent } from './components/ng-for/ng-for.component';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
     NgIfComponent,
     NgModelComponent,
     NgForComponent,
-    NgSwitchComponent
+    NgSwitchComponent,
+    PipesComponent
   ],
   imports: [BrowserModule, FormsModule],
   providers: [EmployeeService],
