@@ -1,0 +1,16 @@
+<div *ngIf="showTitle; then thenBlock; else elseBlock">
+
+</div>
+
+<ng-template #thenBlock>
+  <h1>Título exibido se "showTitle" = true</h1>
+  <h2>Título exibido se "showTitle" = true</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h1>Título exibido se "showTitle" = false</h1>
+</ng-template>
+
+<h1 *ngIf="showTitle">
+  Título exibido se "showTitle" = true
+</h1>
