@@ -1,0 +1,15 @@
+<h1>
+  TO-DO List Example
+</h1>
+
+<ul>
+  <li *ngFor="let item of items">
+    {{ item }}
+    <button (click)="removeTask(item)">Remover</button>
+  </li>
+</ul>
+
+{{ task }}
+
+<input type="text" [(ngModel)]="task">
+<button (click)="addTask()">Adicionar</button>

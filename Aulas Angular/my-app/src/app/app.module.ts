@@ -16,6 +16,7 @@ import { DepartmentComponent } from './components/department/department.componen
 import { HomeComponent } from './components/home/home.component';
 import { EmployeeComponent } from './components/employee/employee.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
     DepartmentComponent,
     HomeComponent,
     EmployeeComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    TodoListComponent
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [EmployeeService],
