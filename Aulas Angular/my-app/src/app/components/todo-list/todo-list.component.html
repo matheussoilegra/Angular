@@ -1,15 +1,22 @@
-<h1>
-  TO-DO List Example
-</h1>
+<div class="container">
+  <div class="jumbotron">
+    <h1>
+      TO-DO List Example
+    </h1>
+  </div>
+  <ul class="list-group">
+    <li *ngFor="let item of items" class="list-group-item">
+      {{ item }} |
+      <button (click)="removeTask(item)" class="btn btn-danger">Remover</button>
+    </li>
+  </ul>
 
-<ul>
-  <li *ngFor="let item of items">
-    {{ item }}
-    <button (click)="removeTask(item)">Remover</button>
-  </li>
-</ul>
+  <hr>
+  <!-- {{ task }} -->
 
-{{ task }}
-
-<input type="text" [(ngModel)]="task">
-<button (click)="addTask()">Adicionar</button>
+  <div class="form-group">
+    <label>Task Name</label>
+    <input type="text" [(ngModel)]="task" class="form-control" placeholder="Enter a new task">
+  </div>
+  <button (click)="addTask(); task=''" class="btn btn-primary">Adicionar</button>
+</div>

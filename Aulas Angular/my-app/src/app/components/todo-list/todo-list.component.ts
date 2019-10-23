@@ -6,8 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todo-list.component.scss']
 })
 export class TodoListComponent implements OnInit {
-  public task = '';
+  public task: string;
   public items = ['item 1', 'item 2', 'item 3', 'item 4'];
+
+  constructor() {}
+
+  ngOnInit() {
+    this.task = '';
+  }
 
   addTask() {
     this.items.push(this.task);
@@ -16,8 +22,4 @@ export class TodoListComponent implements OnInit {
   removeTask(item) {
     this.items.splice(this.items.indexOf(item), 1);
   }
-
-  constructor() {}
-
-  ngOnInit() {}
 }
