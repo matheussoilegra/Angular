@@ -1,0 +1,17 @@
+<h1>Example using ng-if</h1>
+
+<div *ngIf="showTitle; then thenBlock; else elseBlock">
+
+</div>
+
+<ng-template #thenBlock>
+  <h2>"showTitle" = true</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h2>"showTitle" = false</h2>
+</ng-template>
+
+<h2 *ngIf="showTitle">
+  "showTitle" = true
+</h2>

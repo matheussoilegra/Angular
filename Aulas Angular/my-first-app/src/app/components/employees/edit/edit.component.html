@@ -1,0 +1,16 @@
+<h3>Registration of employees</h3>
+
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label>Nome</label>
+    <input type="text" name="name" [(ngModel)]="employee.name" class="form-control" placeholder="Employee's name">
+  </div>
+
+  <label class="form-group">
+    <label>Department</label>
+    <input type="text" name="name" [(ngModel)]="employee.department" class="form-control"
+      placeholder="Employee's department">
+  </label>
+
+  <button class="btn btn-primary">Gravar</button>
+</form>

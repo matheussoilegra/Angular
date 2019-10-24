@@ -1,0 +1,5 @@
+<h1>Example using ng-for</h1>
+
+<ul *ngFor="let car of cars; index as i; first as f; last as l; even as e; odd as o">
+  <li>{{ i }} - {{ f }} - {{ l }} - {{ e }} - {{ o }} - {{ car }}</li>
+</ul>
