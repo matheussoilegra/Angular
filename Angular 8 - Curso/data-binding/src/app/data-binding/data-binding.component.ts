@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DataBindingComponent implements OnInit {
   url: string = 'https://loiane.com/';
   cursoAngular: boolean = true;
-  urlImagem: string = 'http://lorempixel.com/400/200/nature';
+  urlImagem: string = 'http://lorempixel.com/';
 
   getValor() {
     return 1;
