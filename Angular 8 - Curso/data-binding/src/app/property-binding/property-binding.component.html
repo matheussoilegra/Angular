@@ -1,13 +1,5 @@
 <section class="property-binding">
   <article>
-    <h3>Interpolation / Interpolação</h3>
-    <p>String renderizada com interpolação: {{ url }}</p>
-    <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
-    <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor()}}</p>
-    <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso()}}</p>
-  </article>
-
-  <article>
     <h3>Property Binding</h3>
     <img src="{{ urlImagem }}" /> <!-- usando interpolation -->
     <img [src]="urlImagem" /> <!-- usando property binding -->
@@ -35,28 +27,6 @@
       <div class="alert" role="alert" [class.alert-info]="classe.value == 'alert-info'">Info</div>
       <div class="alert" role="alert" [class.alert-warning]="classe.value == 'alert-warning'">Warning</div>
       <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">Danger</div>
-    </div>
-  </article>
-</section>
-
-<section class="event-binding">
-  <article>
-    <h3>Event Binding</h3>
-    <div>
-      <button (click)="botaoClicado()" class="btn btn-primary">Me clique!
-      </button>
-      <br><br>
-
-      <input type="text" (keyup)="onKeyUp($event)" (keyup.enter)="salvarValor($event.target.value)"
-        (blur)="salvarValor(campoInput.value)" #campoInput />
-      <p>Valor atual: {{ valorAtual }}</p>
-      <p>Valor salvo: {{ valorSalvo }}</p>
-      <br><br>
-
-      <span (mouseover)="onMouseOverOut()" (mouseout)="onMouseOverOut()" [class.highlight]="isMouseOver">
-        Passe o mouse sobre mim
-      </span>
-
     </div>
   </article>
 </section>

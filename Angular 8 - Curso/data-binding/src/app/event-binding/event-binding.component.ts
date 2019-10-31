@@ -1,34 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-data-binding',
-  templateUrl: './data-binding.component.html',
-  styles: [
-    `
-      .highlight {
-        background-color: yellow;
-        font-weight: bold;
-      }
-    `
-  ]
+  selector: 'app-event-binding',
+  templateUrl: './event-binding.component.html',
+  styleUrls: ['./event-binding.component.css']
 })
-export class DataBindingComponent implements OnInit {
-  url: string = 'https://loiane.com/';
-  cursoAngular: boolean = true;
-  urlImagem: string = 'http://lorempixel.com/400/200/';
-
+export class EventBindingComponent implements OnInit {
   valorAtual: string = '';
   valorSalvo;
-
   isMouseOver: boolean = false;
-
-  getValor() {
-    return 1;
-  }
-
-  getCurtirCurso() {
-    return true;
-  }
 
   botaoClicado() {
     alert('Botão clicado!');

@@ -1,0 +1,22 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-two-binding',
+  templateUrl: './two-binding.component.html',
+  styleUrls: ['./two-binding.component.css']
+})
+export class TwoBindingComponent implements OnInit {
+  nome: string = 'abc';
+  pessoa: any = {
+    nome: 'Lunna',
+    idade: '30',
+    endereco: {
+      rua: 'Nome da Rua',
+      numero: 999
+    }
+  };
+
+  constructor() {}
+
+  ngOnInit() {}
+}
