@@ -8,6 +8,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoBindingComponent } from './two-binding/two-binding.component';
+import { MeuFormComponent } from './meu-form/meu-form.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TwoBindingComponent } from './two-binding/two-binding.component';
     PropertyBindingComponent,
     InterpolationComponent,
     EventBindingComponent,
-    TwoBindingComponent
+    TwoBindingComponent,
+    MeuFormComponent
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],

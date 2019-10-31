@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-two-binding',
-  templateUrl: './two-binding.component.html',
-  styleUrls: ['./two-binding.component.css']
+  selector: 'app-meu-form',
+  templateUrl: './meu-form.component.html',
+  styleUrls: ['./meu-form.component.css']
 })
-export class TwoBindingComponent implements OnInit {
+export class MeuFormComponent implements OnInit {
   nome: string = 'Matheus';
   pessoa: any = {
     nome: 'Lunna',
